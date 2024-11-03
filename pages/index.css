@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+/* FIRST PRESENTATION */
+section.presentation{
+    margin-top: 100px;
+    background-color: #13171C;
+    min-width: 375px;
+    width: 100%;
+    padding: 170px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+
+}
+
+@media (width >=960px){
+    section.presentation{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 170px 20%;
+    }
+}
+
+.presentation-title>h1{
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span.presentation-title-iam, span.presentation-title-name{
+    color: #00ADB5;
+}
+
+.iam-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(width>=960px){
+    
+    .iam-name{
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+.rocket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+}
+
+.rocket-img, .shadow-img{
+    width: 100%;
+    max-width: 340px;
+}
+
+@media(width>=960px){
+    .rocket-img, .shadow-img{
+        width: 340px;
+    }
+}    
+
+
+
+/* WHO I AM */
+.whoiam-presentation{
+    background-color: #192130;
+    min-width: 375px;
+    width: 100%;
+    /* height: 789px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 15% ;
+    gap: 50px;
+}
+
+@media(width>=960px){
+    .whoiam-presentation{
+        flex-direction: row;
+        gap: 15%;
+    }
+}
+.whoiam-title>h1{
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.whoiam-title{
+    color: white;
+    font-size: 18px;
+}
+
+/* CARDS */
+
+section.cards-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cards-section{
+    background-color: #13171C;
+    background-image: url(../imgs/background.png);
+    background-repeat: repeat;
+    background-size: auto;
+    margin: 0;
+    padding: 10%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1.card-container-title1{
+    font-size: 42px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+p.card-container-title2{
+    margin: 0;
+    padding: 0;
+    color: #00ADB5;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media(width>=960px){
+    .card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    }
+

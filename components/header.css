@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+.container-header{
+    position: fixed;
+    display: flex;
+    margin: 0;
+    top: 0;
+    padding:20px 5%;
+    min-width: 375px;
+    width: 100%;
+    min-height: 100px;
+    height: 100px;
+    background-color: #13171C;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-logo{
+    width: 100px;
+    height: 75px;
+}
+
+.header-menu{
+    width: 40px;
+    height: 40px;
+}
+
+.pages-portfolio, .pages-servicios, .pages-contacto{
+    text-decoration: none;  
+    color: white;  
+    font-size: 32px;
+    margin:auto;
+}
+.header-pages-url{
+    display: none;
+    flex-direction: column;
+    height: 288px;
+}
+.header-pages-url a:hover {
+    text-decoration: underline;
+}
+.header-black-screen {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9); 
+    z-index: 1000;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+.close-menu {
+    display: none;
+    position: absolute;
+    top: 5.9%;
+    right: 5.9%;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+

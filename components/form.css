@@ -1,0 +1,119 @@
+form{
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 40px;
+    width: auto;
+    background-color: #13171C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(width>=1090px){
+    .form{
+        flex-direction: row;
+        align-items:flex-start;
+        padding-top: 270px;
+    }
+    
+}
+
+h1.form-title{
+    color: white;
+    margin: 0 24px;
+    font-size: 42px;
+}
+
+@media(width>=1090px){
+    h1.form-title{
+        width: 40%;
+        font-size: 64px;
+        padding:0 24px 0 5%;
+    }
+    
+}
+
+
+.form-input{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+@media(width>=1090px){
+    .form-input{
+        width: 600px;
+        padding: 0;
+    }
+}
+ .form-input-name-email{
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(width>=1090px){
+    .form-input-name-email{
+        flex-direction: row;
+        gap: 24px;
+        width: 600px;
+    }
+}
+
+
+
+form label{
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+}
+
+@media(width>=1090px){
+    .form-name, .form-email{
+        margin-top:0;
+    }
+}
+
+
+.form-input-name, .form-input-email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.form-input-name > input,.form-input-email > input, .form-input>textarea{
+    background-color: #393E4680;
+    color: white;
+    border-radius: 16px;
+    border: none;
+    padding: 16px;
+
+}
+
+.form-input-name-email>input{
+    height: 60px;
+}
+.form-input>textarea{
+    height: 280px;
+}
+
+.button-send{
+    background-color: #00ADB5;
+    border-radius: 24px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 55px;
+    margin: 40px 0 190px 0 ;
+}
+
+@media(width>=1090px){
+    .button-send{
+        width:231px;
+    }
+}
